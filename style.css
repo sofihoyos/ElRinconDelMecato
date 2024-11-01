@@ -68,3 +68,64 @@ header {
     height: 3rem;
     margin-top: 1rem;
 }
+
+
+main > section{
+    width: 100%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+section > .container-img-text {
+    flex-direction: column;
+    width: 20rem;
+    height: 33rem;
+    background-color: #A78BFA;
+    margin: 0.5rem;
+    border-radius: 3rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+section > .container-img-text:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+section > .container-img-text > img {
+    width: 80%;
+    height: 40%;
+    margin: 1.6rem;
+    transition: opacity 0.3s;
+}
+
+section > .container-img-text > .text{
+    width: 80%;
+    height: 35%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+section > .container-img-text > button{
+    width: 50%;
+    height: 10%;
+    background-color: #4285f4; 
+    color: white;
+    padding: 14px 28px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 4px #2c6ec9;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease;
+}
+
+section > .container-img-text> button:active {
+    box-shadow: 0px 2px #2c6ec9;
+    transform: translateY(2px);
+}
